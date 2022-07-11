@@ -2,9 +2,12 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, useWindowDimensions, View } from 'react-native';
 import { TabView, SceneMap } from 'react-native-tab-view';
+import Profile from './app/profile/profile';
+//import rooney from "./app/profile/rooney.json"
 
 const CaninesRoute = () => (
-  <View style={{ flex: 1}} />
+  <View style={{flex: 1 }}> <Profile /> </View>
+
 );
 
 const RecipesRoute = () => (
