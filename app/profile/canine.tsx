@@ -15,7 +15,7 @@ class Profile extends Component {
 export default Profile;
 //rooney: Canine = JSON.parse(canine);
 //console.log(canine);
-console.log(rooney);
+//console.log(rooney);
 
 
 

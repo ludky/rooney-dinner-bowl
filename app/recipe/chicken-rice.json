@@ -1,0 +1,16 @@
+{
+  "protien": {
+    "chicken": 100,
+    "egg": 20
+  },
+  "carb":{
+    "rice":20,
+    "sweet potatoes":20
+  },
+  "veggies":{
+    "carrots":30,
+    "cabbages":10,
+    "spinach":10
+  },
+  "fruits":{}
+}

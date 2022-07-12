@@ -1,18 +1,6 @@
-import rooney from "./rooney.json"
+import recipe from "./chicken-rice.json"
 import React, { Component } from 'react';
 import {  FlatList, Text, View } from 'react-native';
-
-interface Canine {
-  "activity": number,
-  "sortBy": string,
-  "attrKey": string,
-  "owner": string,
-  "name": string,
-  "weight": number,
-  "age": number
-}
-
-
 
 let profile_data: Response | null | undefined;
 /*
@@ -37,7 +25,7 @@ const getProfile = async () => {
 };
 */
 
-const getRooneyProfile = () => {
+const getRooneyRecipe = () => {
     const response = fetch(
       'https://ug1067tdk0.execute-api.us-east-1.amazonaws.com/test/dinner-bowl', {
         method: 'GET',
@@ -51,7 +39,6 @@ const getRooneyProfile = () => {
   .then(response => {
     if (response.status === 200) {
       console.debug("200");
-      //profile_data = rooney;
       return response.json;
     } else {
       console.log("error")
@@ -60,8 +47,6 @@ const getRooneyProfile = () => {
   })
   .then(response => {
     console.debug(response);
-    //profile_data = rooney;
-    // …
   }).catch(error => {
     console.error(error);
   });
@@ -70,26 +55,30 @@ const getRooneyProfile = () => {
 
 
 
-class Profile extends Component {
+class Recipe extends Component {
 
   componentDidMount() {
-     getRooneyProfile();
+     //getRooneyProfile();
   }
 
 
   
   render() {
     return (
-       <Text>Name: {rooney?.name} <br/>
-       Owner: {rooney?.owner} <br/>
-       Age: {rooney?.age} <br/> 
-       Weight: {rooney?.weight} <br/> 
-       Activity Level: {rooney?.activity} <br/>  
+       <Text>Recipe:  <br/>
+       Protien: Chicken {recipe?.protien.chicken}g <br/>
+       Protien: Egg {recipe?.protien.egg}g <br/>
+       Carb: Rice {recipe?.carb.rice}g <br/> 
+       Carb: Sweet Potatoes {recipe?.carb["sweet potatoes"]}g <br/> 
+       Veggies: Carrots {recipe?.veggies.carrots}g<br/> 
+       Veggies: Cabbages {recipe?.veggies.cabbages}g<br/>
+       Veggies: Spinach {recipe?.veggies.spinach}g<br/>  
+       Fruits: N/A <br/>  
        </Text>
     );
   }
 }
 
-export default Profile;
+export default Recipe;
 //rooney: Canine = JSON.parse(canine);
 console.log(profile_data);

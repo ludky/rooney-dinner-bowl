@@ -3,6 +3,7 @@ import React from 'react';
 import { StyleSheet, Text, useWindowDimensions, View } from 'react-native';
 import { TabView, SceneMap } from 'react-native-tab-view';
 import Profile from './app/profile/profile';
+import Recipe from './app/recipe/recipes';
 //import rooney from "./app/profile/rooney.json"
 
 const CaninesRoute = () => (
@@ -11,12 +12,17 @@ const CaninesRoute = () => (
 );
 
 const RecipesRoute = () => (
+  <View style={{ flex: 1 }} > <Recipe />  </View>
+);
+
+const NutritionRoute = () => (
   <View style={{ flex: 1 }} />
 );
 
 const renderScene = SceneMap({
   canines: CaninesRoute,
   recipes: RecipesRoute,
+  nutrition: NutritionRoute,
 });
 
 
@@ -28,6 +34,7 @@ export default function App() {
   const [routes] = React.useState([
     { key: 'canines', title: 'Canines' },
     { key: 'recipes', title: 'Recipes' },
+    { key: 'nutrition', title: 'Nutrition' },
   ]);
 
   return (
