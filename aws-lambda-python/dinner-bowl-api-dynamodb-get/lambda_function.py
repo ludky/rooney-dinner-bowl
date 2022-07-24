@@ -17,21 +17,16 @@ def lambda_handler(event, context):
     table, tables = load_tables(None)
     print(tables)
     profile_items = table.get_item(Key={
-        'attrKey': {
-          'S': 'profile'
-        },
-        'sortBy': {
-          'S': 'v1_canine'
-        }
+        'attrKey': 'profile',
+        'sortBy': 'v1_canine'
     })
     print(profile_items)
     return {
         "statusCode": 200,
         "headers": {
-             "Access-Control-Allow-Origin": "*",
             "Content-Type": "application/json"
         },
-        "body": tables#json.dumps({
+        "body": profile_items#json.dumps({
             #"Region": json_region
         #})
     }

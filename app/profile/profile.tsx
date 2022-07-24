@@ -42,10 +42,9 @@ const getRooneyProfile = () => {
       'https://ug1067tdk0.execute-api.us-east-1.amazonaws.com/test/dinner-bowl', {
         method: 'GET',
         mode: 'cors',
-        credentials: 'include',
         headers: {
           Accept: 'application/json',
-          'x-api-key':''
+          'x-api-key':'2J5dJvLel92IFOhH6qRlM7lXGQuIA4FB4oEq9Ptr'
         }
       })
   .then(response => {

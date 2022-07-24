@@ -106,3 +106,8 @@ dist
 .expo/
 
 .env
+.DS_Store
+response_1658608501561.json
+
+.vscode/
+**/.aws-sam
