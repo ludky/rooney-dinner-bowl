@@ -4,6 +4,7 @@ import { StyleSheet, Text, useWindowDimensions, View } from 'react-native';
 import { TabView, SceneMap } from 'react-native-tab-view';
 import Profile from './app/profile/profile';
 import Recipe from './app/recipe/recipes';
+import Nutrition from './app/nutrion/nutrion'
 //import rooney from "./app/profile/rooney.json"
 
 const CaninesRoute = () => (
@@ -16,7 +17,7 @@ const RecipesRoute = () => (
 );
 
 const NutritionRoute = () => (
-  <View style={{ flex: 1 }} />
+  <View style={{ flex: 1 }}><Nutrition /> </View>
 );
 
 const renderScene = SceneMap({
