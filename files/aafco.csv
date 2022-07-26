@@ -1,0 +1,42 @@
+"Nutrient (Amount/1,000 kcal ME)b",Minimum,Maximum,Recommended Allowance
+Protein (g),20,,25
+Arginine (g),0.7,,0.88
+Histidine (g),0.37,,0.48
+Isoleucine (g),0.75,,0.95
+Leucine (g),1.35,,1.7
+Lysine (g),0.7,,0.88
+Methionine (g),0.65,,0.83
+Methionine + cystine (g),1.3,,1.63
+Phenylalanine (g),0.9,,1.13
+Phenylalanine + tyrosine (g),1.48,,1.85
+Threonine (g),0.85,,1.08
+Tryptophan (g),0.28,,0.35
+Valine (g),0.98,,1.23
+Fat (g),,82.5,13.8
+Linoleic acid (g),,16.3,2.8
+α-Linolenic acid (g),,,0.11
+Eicosapentaenoic + docosahexaenoic acid (g),,2.8,0.11
+Calcium (g),0.5,,1
+Phosphorus (g),,0.5,0.75
+Potassium (g),,,1
+Sodium (g),75,,200
+Chloride (mg),,,300
+Magnesium (mg),45,,150
+Iron (mg),,,7.5
+Copper (mg),,,1.5
+Manganese (mg),,,1.2
+Zinc (mg),,,15
+Iodine (mcg),175,,220
+Selenium (mcg),,,87.5
+Vitamin A (retinol equivalents),,"16,000",379
+Cholecalciferol (mcg),,20,3.4
+"Vitamin E (α-tocopherol, mg)",,,7.5
+"Vitamin K (menadione, mg)",,,0.41
+Thiamine (mg),,,0.56
+Riboflavin (mg),1.05,,1.3
+Pantothenic acid (mg),,,3.75
+Niacin (mg),,,4.25
+Pyridoxine (mg),,,0.375
+Folic acid (mcg),,,67.5
+Vitamin B12 (mcg),,,8.75
+Choline (mg),,,425

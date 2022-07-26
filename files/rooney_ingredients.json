@@ -1,0 +1,86 @@
+{
+  "attrKey": {
+    "S": "rooney"
+  },
+  "sortBy": {
+    "S": "v1_ingredient"
+  },
+  "carb": {
+    "SS": [
+      "barley",
+      "brown_rice",
+      "mountain_yum",
+      "oat",
+      "pumpkin",
+      "rice",
+      "sweet_potato"
+    ]
+  },
+  "fruit": {
+    "SS": [
+      "apple",
+      "black_berry",
+      "blueberry",
+      "pear",
+      "raspberry",
+      "strawberry",
+      "water_melon"
+    ]
+  },
+  "organ": {
+    "SS": [
+      "beef_liver",
+      "beef_lung",
+      "beef_spleen",
+      "beef_tripe",
+      "chicken_gizzard",
+      "chicken_liver",
+      "duck_gizzard",
+      "duck_liver",
+      "lamb_tripe",
+      "rabbit_liver",
+      "rabbit_lung"
+    ]
+  },
+  "protein": {
+    "SS": [
+      "beef",
+      "chicken",
+      "duck",
+      "lamb",
+      "rabbit",
+      "salmon",
+      "sardine",
+      "venison",
+      "white_fish"
+    ]
+  },
+  "supplement": {
+    "SS": [
+      "cranberry",
+      "fish_oil",
+      "green_lipped_mussel",
+      "green_tripe",
+      "mushroom",
+      "omega3",
+      "q10",
+      "taurine"
+    ]
+  },
+  "veggie": {
+    "SS": [
+      "bell_pepper",
+      "bok_choy",
+      "cabbage",
+      "carrot",
+      "celery",
+      "chard",
+      "cucumber",
+      "kale",
+      "napa_cabbage",
+      "okra",
+      "romaine_lettuce",
+      "squash"
+    ]
+  }
+}
