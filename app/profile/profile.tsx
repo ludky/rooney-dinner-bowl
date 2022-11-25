@@ -15,31 +15,10 @@ interface Canine {
 
 
 let profile_data: Response | null | undefined;
-/*
-const getProfile = async () => {
-  try {
-    const response = await fetch(
-      'https://ug1067tdk0.execute-api.us-east-1.amazonaws.com/test/dinner-bowl', {
-        method: 'GET',
-        headers: {
-          Accept: 'application/json',
-          'x-api-key':''
-        }
-      })
-      .then((response) => response.json())
-      .then((json) => {
-        console.log(response)
-      return json.Item;
-    })
-  } catch (error) {
-    console.error(error);
-  }
-};
-*/
 
 const getRooneyProfile = () => {
     const response = fetch(
-      'https://ug1067tdk0.execute-api.us-east-1.amazonaws.com/test/dinner-bowl', {
+      'https://ug1067tdk0.execute-api.us-east-1.amazonaws.com/test/rooney-dinner-bowl/profile', {
         method: 'GET',
         mode: 'cors',
         headers: {

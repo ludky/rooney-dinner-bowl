@@ -4,8 +4,7 @@ import { StyleSheet, Text, useWindowDimensions, View } from 'react-native';
 import { TabView, SceneMap } from 'react-native-tab-view';
 import Profile from './app/profile/profile';
 import Recipe from './app/recipe/recipes';
-import Nutrition from './app/nutrion/nutrion'
-//import rooney from "./app/profile/rooney.json"
+import Nutrition from './app/nutrition/nutrition'
 
 const CaninesRoute = () => (
   <View style={{flex: 1 }}> <Profile /> </View>

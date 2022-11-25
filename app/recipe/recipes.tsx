@@ -24,7 +24,7 @@ const getProfile = async () => {
   }
 };
 */
-
+/*
 const getRooneyRecipe = () => {
     const response = fetch(
       'https://ug1067tdk0.execute-api.us-east-1.amazonaws.com/test/dinner-bowl', {
@@ -52,7 +52,7 @@ const getRooneyRecipe = () => {
   });
 };
 
-
+*/
 
 
 class Recipe extends Component {
