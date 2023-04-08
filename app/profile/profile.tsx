@@ -30,7 +30,7 @@ const getRooneyProfile = () => {
     if (response.status === 200) {
       console.debug("200");
       //profile_data = rooney;
-      return response.json;
+      return response.json();
     } else {
       console.log("error")
       throw new Error('Something went wrong on API server!');
@@ -51,7 +51,8 @@ const getRooneyProfile = () => {
 class Profile extends Component {
 
   componentDidMount() {
-     getRooneyProfile();
+     const rooney_profile = getRooneyProfile();
+     console.log(rooney_profile)
   }
 
 

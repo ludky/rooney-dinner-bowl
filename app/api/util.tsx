@@ -1,52 +1,18 @@
 
+import config from '../../config';
+import packageJson from '../../package.json';
 
-import React, { useEffect, useState } from 'react';
-import { ActivityIndicator, FlatList, Text, View } from 'react-native';
-
-interface Canine {
-  "activity": number,
-  "sortBy": string,
-  "attrKey": string,
-  "owner": string,
-  "name": string,
-  "weight": number,
-  "age": number
-}
-
-
-/*
-export default App = () => {
-  const [isLoading, setLoading] = useState(true);
-  const [data, setData] = useState([]);
-
-  const getMovies = async () => {
-     try {
-      const response = await fetch('https://reactnative.dev/movies.json');
-      const json = await response.json();
-      setData(json.movies);
-    } catch (error) {
-      console.error(error);
-    } finally {
-      setLoading(false);
-    }
+export const fetchData = async (path: string, method: string, mode: RequestMode = 'cors') => {
+  const url = `${config.baseURL}/${config.env}/${packageJson.name}/${path}`;
+  const headers: { [key: string]: string } = {
+    'Accept': 'application/json',
+  };
+  
+  if (process.env.AWS_API_KEY_TEST) {headers['x-api-key'] = '2J5dJvLel92IFOhH6qRlM7lXGQuIA4FB4oEq9Ptr';}
+  
+  const response = await fetch(url, { headers, method, mode });
+  if (!response.ok) {
+    throw new Error('Network response was not ok');
   }
-
-  useEffect(() => {
-    getMovies();
-  }, []);
-
-  return (
-    <View style={{ flex: 1, padding: 24 }}>
-      {isLoading ? <ActivityIndicator/> : (
-        <FlatList
-          data={data}
-          keyExtractor={({ id }, index) => id}
-          renderItem={({ item }) => (
-            <Text>{item.title}, {item.releaseYear}</Text>
-          )}
-        />
-      )}
-    </View>
-  );
+  return response.json();
 };
-*/
